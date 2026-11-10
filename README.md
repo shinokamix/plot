@@ -2,80 +2,37 @@
 
 English | [Русский](README.ru.md)
 
-A workspace for your notes and data that you share with your AI agent.
+Your notes, files and everything you track, organized together with your AI agent.
 
-You keep a folder of ordinary files: Markdown, CSV, PDF, Excel, Word. plot shows that folder as pages, tables and charts, like Notion. Your agent (Claude Code, Codex or a local model) works in the same folder. You see every change it makes on the page, and you can undo any of them.
+You write notes and drop in files as usual. When you want more, you ask your agent: "keep a plan of my posts and show me what works". It builds the page with a table and a chart and keeps it up to date. You can change anything it made by hand, and you can undo anything it did.
 
-Cursor and T3 Code did this for code. plot does it for notes and personal data.
+> plot is an idea right now. There is no app yet.
 
-> This is an idea. There is no code yet.
+## What you can do with it
 
-## Why
+- Plan posts for X. The agent pulls views every morning and tells you which posts worked.
+- Log food from photos and messages, and see how it affects your weight.
+- Keep a reading list with notes and ratings.
+- Track a job search: roles, stages, people, next steps.
+- Turn bank statements into a spending table.
+- Ask questions across all of it: "do I sleep worse on days I eat late?"
 
-Notion keeps your data on its servers and doesn't let you bring your own AI.
+## Why plot
 
-Obsidian keeps your files on your disk, but plain Markdown has little structure. Tables and charts need plugins.
+**Bring your own agent.** plot works with Claude Code, Codex or a local model. You use the subscription you already have.
 
-You can already point Claude Code at an Obsidian vault. Then you read its changes as text diffs in a terminal, and nothing runs while you're away.
+**Your data stays yours.** Everything is ordinary files on your computer: notes, tables, PDFs, Excel and Word documents. You can open them in other apps or take them with you at any time.
 
-## How it works
+**You see what the agent does.** Its changes show up right on the page. You accept them or undo them.
 
-Every page is a Markdown file. The header holds the page's properties, and the body holds its content:
+**It works while you're away.** Agents can update data on a schedule and leave you questions in an inbox.
 
-```markdown
----
-type: Post
-status: Scheduled
-publish: 2026-11-13 10:00
----
-apps change. models change. your data stays.
-```
+**One place instead of ten apps.** Notes and trackers live together, so your agent can see the whole picture.
 
-A `type` gives a page its fields. You can add one at any time. Write plain notes first, and turn them into typed records once a pattern shows up.
+## Who it's for
 
-To show other pages on a page, add a `view` block:
+People who already use AI agents every day and are tired of keeping their life spread across Notion, Obsidian and a dozen trackers.
 
-````markdown
-```view
-show: Post
-where: status != Archived
-layout: table
-```
-````
+## Status
 
-In plot this block is a live table you can edit with the mouse. In any other editor it is a short code block you can still read.
-
-PDF, Excel and Word files open in their own editors inside plot and are saved in their own formats. You can put any file on a page and it shows a preview.
-
-The workspace is a plain folder:
-
-```
-~/plot/
-  AGENTS.md          rules for agents in this workspace
-  Content/
-    Posts.md
-    posts/*.md       one post per file
-  Health/
-    food.csv
-  .plot/             search index, history, types, agent settings
-```
-
-Delete `.plot/` and you lose the history and the index. Your notes stay.
-
-## Rules
-
-1. Your data is plain files on your disk.
-2. You and the agent have the same tools. Anything the agent builds, you can build or change by hand.
-3. Agent changes appear on the page itself, each with Accept and Undo.
-4. Agents can run on a schedule. When they need a decision from you, they leave it in an Inbox.
-5. Any agent works. plot runs the official Claude Code or Codex CLI, so you use your own subscription.
-
-## Plan
-
-1. Markdown pages, types and views.
-2. An agent thread with visible changes and undo.
-3. Scheduled agents and the Inbox.
-4. PDF and CSV, then Excel and Word.
-5. Sync, a phone app, self-hosting for teams.
-
-Running plot locally will be free. We plan to charge for hosted AI, for sync, and for a server that runs your agents while your laptop is off.
+We're writing down the idea and the first designs. Follow the repo if you want to see where it goes.
