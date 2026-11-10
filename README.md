@@ -2,37 +2,37 @@
 
 English | [Русский](README.ru.md)
 
-Your notes, files and everything you track, organized together with your AI agent.
+You ask your AI agent for something, and it builds a page that stays. The page lives in your files and keeps itself up to date.
 
-You write notes and drop in files as usual. When you want more, you ask your agent: "keep a plan of my posts and show me what works". It builds the page with a table and a chart and keeps it up to date. You can change anything it made by hand, and you can undo anything it did.
+> plot is an idea for now. There is no app yet.
 
-> plot is an idea right now. There is no app yet.
+## An example
 
-## What you can do with it
+You write to your agent: "keep a plan of my X posts and tell me what works".
 
-- Plan posts for X. The agent pulls views every morning and tells you which posts worked.
-- Log food from photos and messages, and see how it affects your weight.
-- Keep a reading list with notes and ratings.
-- Track a job search: roles, stages, people, next steps.
-- Turn bank statements into a spending table.
-- Ask questions across all of it: "do I sleep worse on days I eat late?"
+1. The agent makes a Posts page with a table of your posts and a chart of views.
+2. Every morning it pulls fresh numbers from X and updates the page.
+3. On Friday it leaves you a note: "quote posts got 4 times more views this week, here are 3 ideas like that".
 
-## Why plot
+You can open the page and edit it by hand, like a page in Notion. Every change the agent made is marked, and you can undo any of them.
 
-**Bring your own agent.** plot works with Claude Code, Codex or a local model. You use the subscription you already have.
+The same works for food and weight, books, a job search, spending, or anything else you want to keep track of. Because everything lives in one place, you can ask questions across it: "do I sleep worse on days I eat late?"
 
-**Your data stays yours.** Everything is ordinary files on your computer: notes, tables, PDFs, Excel and Word documents. You can open them in other apps or take them with you at any time.
+## How it differs
 
-**You see what the agent does.** Its changes show up right on the page. You accept them or undo them.
+| | What happens | What plot does |
+|---|---|---|
+| ChatGPT, Grok, Claude chat | The answer stays in the chat. Next week you ask again and paste the data again. | The answer becomes a page with your data, and it updates itself. |
+| Notion | You build every table and page by hand. The built-in AI is Notion's, and your data is on Notion's servers. | Your agent builds and maintains the pages. Your data is ordinary files on your computer. |
+| Obsidian with Claude Code | You read the agent's changes as text in a terminal. Nothing happens until you start it. | Changes show up on the page with an undo button. Agents work on a schedule and leave you questions. |
+| Separate trackers for food, money, habits | Each app keeps its data to itself, and no AI sees all of it. | Notes and trackers sit together, so your agent sees the whole picture. |
 
-**It works while you're away.** Agents can update data on a schedule and leave you questions in an inbox.
-
-**One place instead of ten apps.** Notes and trackers live together, so your agent can see the whole picture.
+plot works with the agent you already pay for: Claude Code, Codex or a local model.
 
 ## Who it's for
 
-People who already use AI agents every day and are tired of keeping their life spread across Notion, Obsidian and a dozen trackers.
+People who already talk to AI agents every day and want the results to stay somewhere useful, in files they own.
 
 ## Status
 
-We're writing down the idea and the first designs. Follow the repo if you want to see where it goes.
+We are writing down the idea and drawing the first screens.
